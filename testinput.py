@@ -1,19 +1,12 @@
-# import tkinter as tk
-# from tkinter import filedialog
-
-# root = tk.Tk()
-# root.withdraw()
-
-# file_path = filedialog.askopenfilename()
-
 import textract
-#mport docx2txt
-import Tkinter, tkFileDialog
+import tkinter as tk
+from tkinter import filedialog
 
-root = Tkinter.Tk()
+root = tk.Tk()
 root.withdraw()
 
-t = tkFileDialog.askopenfilename()
+t = filedialog.askopenfilename()
 text = textract.process(t)
-#text2 = docx2txt.process(t)
 print(text)
+
+text.split()
