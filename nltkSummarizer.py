@@ -48,10 +48,16 @@ for sentence in sentences:
 	sentenceValue[sentence]=sentenceValue[sentence]/len(senWords)
 	totAvg+=sentenceValue[sentence]
 
-senValAvg=totAvg/len(sentences)
+ansArr=[]
+while sentenceValue.keys():
+	maxNum=0
+	corSen=""
+	for i in sentenceValue.keys():
+		if sentenceValue[i]>maxNum:
+			maxNum=sentenceValue[i]
+			corSen=i
+	ansArr.append((corSen,maxNum))
+	del sentenceValue[corSen]
 
-summary=""
-for sen in sentences:
-	if sentenceValue[sen]>=1.5*senValAvg:
-		summary+=sen
-print(summary)
+for i in ansArr:
+	print(i)
