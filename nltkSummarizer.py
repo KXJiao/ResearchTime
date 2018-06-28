@@ -1,8 +1,18 @@
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import PorterStemmer
+import textract
+import tkinter as tk
+from tkinter import filedialog
+
+root = tk.Tk()
+root.withdraw()
+
 ps = PorterStemmer()
-text=open("subInfo.txt").read()
+#text=open("subInfo.txt").read()
+t = filedialog.askopenfilename()
+text = textract.process(t).decode("utf-8")
+
 stopWords = set(stopwords.words("english"))
 words = word_tokenize(text)
 
