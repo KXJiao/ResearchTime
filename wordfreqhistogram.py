@@ -8,7 +8,7 @@ counts = Counter(word_list)
 
 labels, values = zip(*counts.items())
 
-# sort values in descending order
+# sort values in ascending order
 indSort = np.argsort(values)[::1]
 
 # rearrange data
