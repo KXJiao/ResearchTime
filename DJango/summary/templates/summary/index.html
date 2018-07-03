@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        {% load static %}
+        <script src = "{% static "app.js" %}"></script>
+    </head>
+    <body>
+    	<div id ="input">
+        	<p id="result"></p>
+        	<form action= "{% static "upload.php" %}" method="post" enctype="multipart/form-data" target="upload_target" >
+            	File: <input name="file" type="file" />
+                	<input type="submit" name="submitBtn" value="Upload" />
+        	</form>
+        	<iframe id="upload_target" name="upload_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+        </div>
+        <div id ="compare">
+            <input id = "compare" type = "button" onclick = "compare()" value = "Compare Documents">
+        </div>
+    </body>
+</html>
+
