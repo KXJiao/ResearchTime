@@ -1,6 +1,6 @@
 import Algorithmia
 
-input = "https://edge.alluremedia.com.au/m/k/2016/05/clonewarsbanner.jpg"
+input = ""
 client = Algorithmia.client('simQubrq3ubzM21MWS71oDvbR011')
 algo = client.algo('ocr/RecognizeCharacters/0.3.0')
 print(algo.pipe(input).result)
