@@ -1,10 +1,8 @@
-import Algorithmia
+from PIL import Image
+import pytesseract
 
-input = {
-    "input":
-    "",
-    "output": "data://.algo/character_recognition/TextDetectionCTPN/temp/receipt.png"
-}
-client = Algorithmia.client('simQubrq3ubzM21MWS71oDvbR011')
-algo = client.algo('character_recognition/TextDetectionCTPN/0.2.0')
-print(algo.pipe(input).result)
+im = Image.open("terms.jpg")
+
+text = pytesseract.image_to_string(im, lang='eng')
+
+print(text)
