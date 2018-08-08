@@ -1,6 +1,0 @@
-import Algorithmia
-
-input = ""
-client = Algorithmia.client('simQubrq3ubzM21MWS71oDvbR011')
-algo = client.algo('ocr/RecognizeCharacters/0.3.0')
-print(algo.pipe(input).result)
