@@ -19,8 +19,8 @@ start = time.time()
 words=open("subInfo.txt").read()
 sents=open("subInfo.txt").readlines()
 
-bioTerms=open("bioTerms.txt").readlines()
-bioTerms=[t.strip() for t in bioTerms]
+bioTerms=open("chemTerms.txt").readlines()
+bioTerms=[t.strip().lower() for t in bioTerms]
 bioPhrases=[term for term in bioTerms if " " in term]
 phsWords=[]
 for ph in bioPhrases:
@@ -33,7 +33,7 @@ for ph in bioPhrases:
 tknzr = TweetTokenizer()
 words=tknzr.tokenize(words)
 words=words+phsWords
-words=[w for w in words if not w in string.punctuation]
+words=[w.lower() for w in words if not w in string.punctuation]
 #words = [w[0].lower()+w[1:] if w[0].lower()+w[1:] in model.vocab else w for w in words]
 stop_words = set(stopwords.words('english'))
 words = [w for w in words if not w in stop_words]
@@ -42,8 +42,7 @@ setWords=set(words)
 setWords=list(setWords)
 
 ### Algorithm ###
-keyTerms=[t for t in setWords if t in bioTerms or t[0].lower()+t[1:] in bioTerms]
-# finding frequencies
+keyTerms=[t for t in setWords if t in bioTerms]
 freqDic={}
 wToStem={}
 ps = PorterStemmer()
@@ -63,11 +62,13 @@ for t in setWords:
 	if t in keyTerms:
 		contDic[t]=1
 	else:
-		contDic[t]=.35
+		contDic[t]=.5
 # finding the importance of each term
 termVal={}
 for t in setWords:
-	termVal[t]=contDic[t]*15 + (freqDic[wToStem[t]]-avgFreq)*1  #Vary results by changing factors
+	#termVal[t]=(1+contDic[t])*math.pow(avgFreq,4) * 0+ (freqDic[wToStem[t]]-avgFreq)*1  #Vary results by changing factors
+	termVal[t]=contDic[t] * 15+ (freqDic[wToStem[t]]-avgFreq)*1
+	#termVal[t]=contDic[t]*freqDic[wToStem[t]]
 	#print(t+": "+ str(contDic[t]*12)+ " + "+ str(freqDic[wToStem[t]]-avgFreq) + " ("+wToStem[t]+": "+str(freqDic[wToStem[t]])+")")
 '''
 dicCopy = dict(termVal)
@@ -97,7 +98,7 @@ for sen in sents:
 		sentScore=0
 		hitCount=0
 		for t in setWords:
-			hits=[m.start() for m in re.finditer(r"\b" +re.escape(t)+r"\b", sen)]
+			hits=[m.start() for m in re.finditer(r"\b" +re.escape(t)+r"\b", sen, re.IGNORECASE)]
 			#sentScore+=len(hits)*termVal[t]
 			if len(hits)>0:
 				hitCount+=1
