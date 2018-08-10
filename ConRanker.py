@@ -62,7 +62,7 @@ for t in setWords:
 	if t in keyTerms:
 		contDic[t]=1
 	else:
-		contDic[t]=.5
+		contDic[t]=.4
 # finding the importance of each term
 termVal={}
 for t in setWords:
