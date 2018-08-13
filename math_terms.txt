@@ -157,6 +157,7 @@ Tangent
 Tensor
 Term
 Theorem
+Theta
 Topology
 Transcendental Number
 Transfinite Numbers
@@ -164,6 +165,7 @@ Transformation
 Translation
 Triangular Number
 Trigonometry
+Trignometric Functions
 Trinomial
 Type Theory
 Vector
