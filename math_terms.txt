@@ -2,6 +2,7 @@ Algebra
 Algorithm
 Amicable Numbers
 Analytic Geometry
+Arc
 Arithmetic
 Associative Property
 Asymptote
@@ -26,6 +27,7 @@ Conic Section
 Continued Fraction
 Coordinate Plane
 Correlation
+Cosine
 C.V. Raman
 David Hilbert
 Decimal
@@ -132,17 +134,21 @@ Real Numbers
 Reciprocal
 Riemannian Geometry
 Right Triangle
+Scalar
+Sector
 Self-Similarity
 Sequence
 Set
 Significant Digits
 Simultaneous Equations
+Sine
 Slope
 Spherical Geometry
 Srinivasa Ramanujan
 Subset
 Surd
 Symmetry
+Tangent
 Tensor
 Term
 Theorem
