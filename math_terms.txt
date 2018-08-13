@@ -39,6 +39,7 @@ Diameter
 Differential Equation
 Differential Geometry
 Differentiation
+Dilation
 Diophantine Equation
 Distributive Property
 Element
@@ -137,6 +138,7 @@ Real Numbers
 Reciprocal
 Riemannian Geometry
 Right Triangle
+Rotation
 Scalar
 Sector
 Self-Similarity
@@ -159,6 +161,7 @@ Topology
 Transcendental Number
 Transfinite Numbers
 Transformation
+Translation
 Triangular Number
 Trigonometry
 Trinomial
