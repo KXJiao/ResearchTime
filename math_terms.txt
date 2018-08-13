@@ -14,6 +14,7 @@ Binomial
 Boolean
 Calculus
 Cardinal Numbers
+Carl Friedrich Gauss
 Cartesian Coordinates
 Coefficient
 Combinatorics
@@ -25,6 +26,8 @@ Conic Section
 Continued Fraction
 Coordinate Plane
 Correlation
+C.V. Raman
+David Hilbert
 Decimal
 Deductive Reasoning
 Derivative
@@ -54,6 +57,7 @@ Game Theory
 Gaussian Curvature
 Geometry
 Golden Ration
+Gottfried Wilhelm Leibniz
 Graph Theory
 Group
 Group Theory
@@ -81,6 +85,7 @@ Logarithm
 Logic
 Logicism
 Magic Square
+Mahalanobis Distance
 Mandelbrot Set
 Manifold
 Matrix
@@ -113,6 +118,7 @@ Polynomial
 Prime Numbers
 Projective Geometry
 Plane
+Prasanta Chandra Mahalanobis
 Probability Theory
 Pythagorean Theorem
 Pythagorean Triples
@@ -133,6 +139,7 @@ Significant Digits
 Simultaneous Equations
 Slope
 Spherical Geometry
+Srinivasa Ramanujan
 Subset
 Surd
 Symmetry
