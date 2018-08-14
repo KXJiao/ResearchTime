@@ -34,7 +34,7 @@ Marxism
 Medicine
 Medieval
 Migration
-Milititary
+Military
 Multiculturalism
 Music
 Myth
@@ -247,3 +247,33 @@ Harvard University
 Charles Babbage
 Ada Lovelace
 Alan Turing
+George Washington
+Army
+Assassinate
+Axis
+Allies
+Bronze Age
+Blitzkrieg
+Catholic
+Colony
+Commander
+Reformation
+Government
+Historian
+Imperialism
+Iron Age
+Media
+Merchant
+Nazi
+Occupation
+Parliament
+Rebellion
+Relic
+Secular
+Siege
+State
+Stone Age
+Tax
+Territory
+Treason
+Tyrant
