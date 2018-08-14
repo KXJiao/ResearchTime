@@ -70,7 +70,7 @@ alveolus
 alveoli
 amino acid
 amino group
-aminoacyl—tRNA synthetases
+aminoacyl tRNA synthetases
 ammonification
 amniocentesis
 amnion
@@ -1027,7 +1027,7 @@ MPF
 M-phase promoting factor
 muscle fiber
 mRNA
-Müllerian mimicry
+Mullerian mimicry
 multigene family
 mutagen
 mutagenesis
@@ -1885,8 +1885,8 @@ amino acids
 amino acides
 amino groups
 amino groupes
-aminoacyl—tRNA synthetasess
-aminoacyl—tRNA synthetaseses
+aminoacyl tRNA synthetasess
+aminoacyl tRNA synthetaseses
 ammonifications
 ammonificationes
 amniocentesiss
@@ -3799,8 +3799,8 @@ muscle fibers
 muscle fiberes
 mRNAs
 mRNAes
-Müllerian mimicrys
-Müllerian mimicryes
+Mullerian mimicrys
+Mullerian mimicryes
 multigene familys
 multigene familyes
 mutagens
